@@ -130,6 +130,7 @@ StatBin2 <- ggplot2::ggproto(
 #' from the ggplot2 package
 #'
 #' @inheritParams ggplot2::stat_count
+#' @param width Use to override the default width.
 #' @param geom Use to override the default connection between
 #'   \code{\link[ggplot2]{geom_bar}}/\code{\link{geom_barcount}} and
 #'   \code{\link{stat_count2}}.

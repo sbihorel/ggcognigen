@@ -277,8 +277,8 @@ print.ggcognigen <- function(x, ...) {
   # Print all pages
   for (p in seq_along(pages)) {
     x$facet$params$page <- pages[p]
-    ggplot2:::print.ggplot(x = repair_facet(x), ...)
-
+    grid::grid.newpage()
+    grid::grid.draw( ggplot2::ggplotGrob(repair_facet(x)) )
   }
 
   # Prevent ggforce from dropping multiple pages value
